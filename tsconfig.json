@@ -1,0 +1,67 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    "rootDir": ".",
+    "outDir": "./dist",
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "allowJs": true,
+    "module": "CommonJS",
+    "target": "esnext",
+    "types": [
+      "node",
+      "express"
+    ],
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+      "allowImportingTsExtensions": true,
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types/"
+    ],
+    "baseUrl": "./src",
+    // For nodejs:
+    "lib": [
+      "ES6"
+    ],
+    // "types": ["node"],
+    // and npm install -D @types/node
+    // Other Outputs
+    "sourceMap": true,
+    // "declaration": true,
+    //"declarationMap": true,
+    // Stricter Typechecking Options
+    //"noUncheckedIndexedAccess": true,
+    // "exactOptionalPropertyTypes": true,
+    // Style Options
+    "noImplicitReturns": false,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+    "paths": {
+      "@/*": [
+        "*"
+      ]
+    },
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx",
+   //  "verbatimModuleSyntax": true,
+//     "isolatedModules": false,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

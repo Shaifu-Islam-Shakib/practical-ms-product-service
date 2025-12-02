@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+dist/
+
+# Environment
+
+
+# Drizzle
+drizzle/meta/
+drizzle
+.drizzle/
+*.sqlite
+*.db
+
+# Local PostgreSQL data (if you have docker volume or local folder)
+postgresql/
+pgdata/
+postgres/
+
+# Docker
+.docker/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs & temp
+*.log
+tmp/
+temp/
